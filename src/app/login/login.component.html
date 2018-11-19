@@ -1,0 +1,24 @@
+
+<div class="view container-fluid">
+		<div class="jumbotron jumbotron-fluid">
+				<div class="container">
+				  <h1 class="display-4">Expense Reimbursement System</h1>
+				</div>
+			  </div>
+	<div class="form-container login">
+		<div class="form-group">
+
+			<label class="invisible"><strong>Username</strong></label>
+			<input required #username class="clear form-control" id="username" type="text" name="username" placeholder="username" />
+		</div>
+
+		<div class="form-group">
+			<label class="invisible"><strong>Password</strong></label>
+			<input required #password class="clear form-control" id="password" type="password" name="password" placeholder="Password" />
+		</div>
+
+		<div class="form-group">
+			<input type="submit" value="Log in" class="btn btn-primary" id="login-button" (click)="getFromLogin(username.value, password.value)">
+		</div>
+	</div>
+</div>

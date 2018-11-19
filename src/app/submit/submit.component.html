@@ -1,0 +1,58 @@
+<h3>Expense Reimbursement</h3>
+<h5>The following fields are required</h5>
+
+<div class="form-row">
+  <div class="form-group col-md-4 col-lg-3">
+    <label for="inputEventCost">Event Cost</label>
+    <input required type="text" #amount class="form-control" id="inputEventCost" placeholder="500.00" />
+  </div>
+</div>
+
+<div class="form-row">
+  <div class="form-group col-md-4 col-lg-3" #type>
+    <label>Event Type</label>
+    <select #choice>
+      <option value="1">Lodging</option>
+      <option value="2">Travel</option>
+      <option value="3">Food</option>
+      <option value="4">Other</option>
+    </select>
+  </div>
+</div>
+<!-- <div class="form-row">
+  <div class="form-group col-md-4 col-lg-3" #type>
+    <label>Event Type</label>
+    <div class="form-check">
+      <input class="form-check-input" type="radio" name="eventType" id="certificationRadio" onchange="enableInputOtherEvent()"
+        value="1">
+      <label class="form-check-label" for="certificationRadio">Lodging</label>
+    </div>
+    <div class="form-check">
+      <input class="form-check-input" type="radio" name="eventType" id="certPrepRadio" onchange="enableInputOtherEvent()"
+        value="2">
+      <label class="form-check-label" for="certPrepRadio">Travel</label>
+    </div>
+    <div class="form-check">
+      <input class="form-check-input" type="radio" name="eventType" id="universityRadio" onchange="enableInputOtherEvent()"
+        value="3">
+      <label class="form-check-label" for="universityRadio">Food</label>
+    </div>
+    <div class="form-check">
+      <input class="form-check-input" type="radio" name="eventType" id="otherEventTypeRadio" onchange="enableInputOtherEvent()"
+        value="4">
+      <label class="form-check-label" for="otherEventTypeRadio">Other</label>
+    </div>
+  </div>
+</div> -->
+<div class="form-row">
+  <div class="form-group col-md-12 col-lg-10 col-xl-8">
+    <label for="inputDescription">Event Description</label>
+    <textarea required class="form-control" #desc id="inputDescription" rows="2" placeholder="What you're learning and how"></textarea>
+  </div>
+</div>
+<div class="form-row">
+  <div class="form-group col-md-12 col-lg-10 col-xl-8">
+    <button type="submit" class="btn btn-lg btn-primary" (click)="submit(login.getUser().userId, amount.value, choice.value, desc.value)"
+      id="submit-new-request">Submit</button>
+  </div>
+</div>

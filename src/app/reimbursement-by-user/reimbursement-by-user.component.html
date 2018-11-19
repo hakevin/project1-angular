@@ -1,0 +1,54 @@
+<div class="container">
+    <div class="row">
+        <div id="content" class="card col-12 col-md-18 text-center ">
+            <!-- Left body -->
+            <h5 class="card-title" id="content-title-name">Employee View Page</h5>
+            <table class="table table-bordered">
+                <thead>
+                    <tr>
+                        <th class="col">
+                            Name
+                        </th>
+                        <th class="col">
+                            Description
+                        </th>
+                        <th class="col">
+                            Amount
+                        </th>
+                        <th class="col">
+                            Status
+                        </th>
+
+                    </tr>
+                </thead>
+                <tbody *ngFor='let data of reimbursement'>
+                    <tr *ngIf='data.status === "Pending" && data.author === login.getUser().userId' scope="row">
+                        <td class="col">
+                            {{data.firstName}} {{data.lastName}}
+                        </td>
+
+
+                        <td class="col">
+                            {{data.description}}
+                        </td>
+
+
+                        <td class="col">
+                            {{data.amount}}
+                        </td>
+
+
+                        <td class="col">
+                            {{data.status}}
+                        </td>
+
+                     
+                    </tr>
+                </tbody>
+            </table>
+
+
+
+        </div>
+    </div>
+</div>

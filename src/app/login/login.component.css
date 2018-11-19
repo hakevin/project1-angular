@@ -1,0 +1,153 @@
+/*mobile*/
+@media only screen and (max-width: 768px) {
+    .navbar {
+        background-color: #4285F4;
+    }
+    .login {
+        width: auto;
+        margin: auto;
+    }
+    .mobile-only {
+        display: inline-block;
+    }
+    .pc-only {
+        position: absolute;
+        top: 9999px;
+        display: none;
+    }
+}
+/*desktop*/
+@media only screen and (min-width: 768px) {
+    .view {
+        overflow: visible;
+        margin-top: -56px;
+    }
+    .login {
+        width: 538px;
+        margin: auto;
+    }
+    .mobile-only {
+        position: absolute;
+        right: -9999px;
+        display: none;
+    }
+    .pc-only {
+        display: inline-block;
+    }
+}
+html {
+    height:100%;
+}
+body {
+    height:100%;
+    margin:auto;
+}
+
+/* Login */
+ .view {
+    background: url("../../img/pixelate.png")no-repeat center center;
+    background-size: cover!important;
+    min-height:100%;
+    position: absolute;
+    bottom: 0px;
+} 
+
+.jumbotron {
+    opacity: 0.8;
+    text-align:center;
+}
+.login {
+    margin-top: 150px;
+    color: white;
+}
+input.clear {
+    background-color:rgba(255,255,255,0.3) !important;
+    border:none !important;
+}
+.navbar-brand {
+    margin:auto;
+}
+/*main*/
+.container {
+    display: table!important;
+    height: 100%!important;
+    width: 100%!important;
+}
+.row {
+    color: black;
+}
+.hat {
+    padding: 40px;
+    width: 100%;
+}
+.container-fluid {
+    height: 100%!important;
+    width: 100%;
+}
+.navbar {
+    background-color: transparent;
+    box-shadow: 0px 2px 10px rgb(60,60,60);
+}
+a.nav-link {
+    text-align: center;
+    text-decoration: none;
+    color: white;
+}
+a.nav-link:hover {
+    text-decoration: none;
+    color: rgb(200,200,200);
+}
+a.nav-link:active {
+    text-decoration: none;
+    color: rgb(240,240,240);
+}
+.navbar-dark {
+    color: white;
+}
+.btn {
+    width: 100%;
+    text-decoration: none!important;
+}
+.close {
+    vertical-align: middle;
+}
+/*ers*/
+.navbar-toggler {
+    position: relative;
+    float: right;
+}
+.float-right {
+    width: 100%;
+}
+#content {
+    height: 100%;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    min-height: 500px;
+    width:100%;
+}
+.accordion {
+    background:silver;
+}
+.card {
+    padding:1px;
+    margin:1px;
+}
+.request-header {
+    padding: 0px!important;
+    box-shadow: 0px 0px 5px rgb(60,60,60);
+}
+.request-header:hover {
+    box-shadow: 0px 0px 10px rgb(60,60,60);
+}
+.request-header:active {
+    box-shadow: 0px 0px 2px rgb(60,60,60);
+}
+/*divider*/
+#divider {
+    padding: 0px;
+    margin: 0px;
+    width: 1rem;
+    display:inline-block;
+}
+
